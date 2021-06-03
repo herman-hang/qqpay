@@ -52,7 +52,7 @@ class QQPay
         $this->params['body'] = $this->body = $params['body'];
         $this->params['out_trade_no'] = $this->out_trade_no = $params['out_trade_no'];
         $this->params['fee_type']   = $this->fee_type;
-        $this->params['total_fee'] = $this->total_fee = (int)$params['total_fee'];
+        $this->params['total_fee'] = $this->total_fee = $params['total_fee']*100;
         $this->params['spbill_create_ip'] = $this->spbill_create_ip;
         $this->params['notify_url'] = $this->notify_url;
         $this->params['trade_type'] = $this->trade_type = $params['trade_type'];
@@ -79,7 +79,6 @@ class QQPay
      */
     public function orderQuery($out_trade_no)
     {
-        $this->params['appid'] = $this->appid;
         $this->params['mch_id'] = $this->mch_id;
         $this->params['nonce_str'] = $this->genRandomString();
         $this->params['out_trade_no'] = $out_trade_no;
