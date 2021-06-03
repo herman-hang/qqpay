@@ -103,7 +103,6 @@ class QQPay
      */
     public function closeOrder($out_trade_no)
     {
-        $this->params['appid'] = $this->appid;
         $this->params['mch_id'] = $this->mch_id;
         $this->params['nonce_str'] = $this->genRandomString();
         $this->params['out_trade_no'] = $out_trade_no;
