@@ -1,0 +1,21 @@
+{
+    "name": "xiaohang/qqpay",
+    "description": "PHP实现QQ钱包支付，易上手，操作简单。",
+    "keywords": ["PHP","QQ钱包支付","QQ支付","集成支付"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaohang",
+            "email": "11467102@qq.com",
+            "homepage": "https://www.yundaohang.net/"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "xiaohang\\discern\\": "src"
+        }
+    }
+}
