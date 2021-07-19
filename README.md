@@ -1,7 +1,7 @@
 ## 安装
-``php
+```php
 composer require xiaohang/qqpay
-``
+```
 ## 代码演示
 
 ```php
